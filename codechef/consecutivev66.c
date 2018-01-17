@@ -4,7 +4,7 @@
 typedef struct{
   int n;
   int *array;
-  int *array2;
+
 }Con;
 
 void find(Con *);
@@ -15,7 +15,7 @@ void find(Con *sp)
   int i,j,count = 0,temp,difference=5;
   scanf("%d",&sp->n);
   sp->array = (int *)malloc(sizeof(int)*sp->n);
-  sp->array2 = (int *)malloc(sizeof(int)*sp->n);
+
   for(i = 0;i<sp->n;i++)
   {
     scanf("%d",&sp->array[i]);
@@ -38,7 +38,7 @@ printf("%d",difference - 1);
 void deallocate(Con *sp)
 {
   free(sp->array);
-  free(sp->array2);
+
 }
 
 int main()
