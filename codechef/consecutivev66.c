@@ -20,18 +20,7 @@ void find(Con *sp)
   {
     scanf("%d",&sp->array[i]);
   }
-  for(i=0;i<sp->n;i++)
-  {
-    for(j=i+1;j<sp->n;j++)
-    {
-      if(sp->array[i]>sp->array[j])
-      {
-        temp = sp->array[i];
-        sp->array[i] = sp->array[j];
-        sp->array[j] =  temp;
-      }
-    }
-  }
+
 difference = abs(sp->array[0]-sp->array[1]); // finding the difference between two indices and assigning to difference
   for(i=0;i<sp->n;i++)
 {
