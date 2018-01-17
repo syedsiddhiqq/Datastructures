@@ -32,12 +32,12 @@ void find(Con *sp)
       }
     }
   }
-difference = abs(sp->array[0]-sp->array[1]);
+difference = abs(sp->array[0]-sp->array[1]); // finding the difference between two indices and assigning to difference
   for(i=0;i<sp->n;i++)
 {
   for(j=i+1;j<sp->n;j++)
   {
-    if(difference>abs(sp->array[i]-sp->array[j]))
+    if(difference>abs(sp->array[i]-sp->array[j]))//checking if the difference is lesser than the assigned one if yes then replace
     {
       difference = abs(sp->array[i] - sp->array[j]);
     }
